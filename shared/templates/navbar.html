@@ -1,10 +1,10 @@
 {% load static %}
 <nav class="side-navbar">
-    <button class="nav-item-img brillo" type="button">
+    <a class="nav-item-img brillo" href="{% url 'home' %}">
         <img src="{% static 'img/logo.png' %}">
-    </button>
-    <button class="nav-item brillo" type="button">HOME</button>
-    <button class="nav-item brillo" type="button">PLAY</button>
-    <button class="nav-item brillo" type="button">CARDS</button>
-    <button class="nav-item brillo" type="button">ABOUT</button>
+    </a>
+    <a class="nav-item brillo" href="{% url 'home' %}">HOME</a>
+    <a class="nav-item brillo" href="{% url 'play' %}">PLAY</a>
+    <a class="nav-item brillo" href="{% url 'cards' %}">CARDS</a>
+    <a class="nav-item brillo" href="{% url 'about' %}">ABOUT</a>
 </nav>

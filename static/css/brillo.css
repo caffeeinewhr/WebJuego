@@ -5,8 +5,8 @@
 
     &:before {
         content: '';
-        border-radius: 28px;
-        background: linear-gradient(45deg, #340000, #ff5a83, #ff5a8365, #ff5a83, #ff5a8365, #ff5a83, #ff5a8365);
+        border-radius: 12px;
+        background: linear-gradient(45deg, #ff575700, #ff5757ad, #ff575759, #ff5757ad, #ff575759, #ff5757ad, #ff575700);
         position: absolute;
         top: -2px;
         left: -2px;
@@ -15,7 +15,7 @@
         filter: blur(5px);
         width: calc(100% + 4px);
         height: calc(100% + 4px);
-        animation: brillar 8s linear infinite;
+        animation: brillar 10s linear infinite;
         opacity: 0; /* Ocultar inicialmente el brillo */
         transition: opacity 0.1s ease-in-out;
     }
@@ -32,16 +32,16 @@
 
     &:before {
         content: '';
-        border-radius: 28px;
-        background: linear-gradient(45deg, #000000, #ff5a83a9, #ff5a8365, #ff5a83a9, #ff5a8365, #ff5a83a9, #000000);
+        border-radius: 12px;
+        background: linear-gradient(45deg, #ff57570e, #ff5757ad, #ff575759, #ff5757ad, #ff575759, #ff5757ad, #ff57570e);
         position: absolute;
         top: -2px;
         left: -2px;
         background-size: 400%;
         z-index: -1; /* z-index -1 para que esté detrás del contenido */
         filter: blur(100px);
-        width: calc(100% + 2px);
-        height: calc(100% + 2px);
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
         animation: brillar 30s linear infinite;
     }
 }

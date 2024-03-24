@@ -11,7 +11,7 @@
     overflow: hidden;
 
     border: 6px solid #ffffff;
-    border-radius: 28px;
+    border-radius: 2%;
 }
 
 .carta:hover {
@@ -19,13 +19,13 @@
 }
 
 .tipo_damage {
-    border: 6px solid #ff578a;
+    border: 6px solid #ff5b5b;
 }
 
 .tipo_tempo {
-    border: 6px solid #57b3ff;
+    border: 6px solid #5bb0ff;
 }
 
 .tipo_especial {
-    border: 6px solid #dbff57;
+    border: 6px solid #e6ff5b;
 }

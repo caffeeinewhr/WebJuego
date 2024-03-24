@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleepy Rush</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/cartas3D.css' %}">
+    <link rel="stylesheet" href="{% static 'css/brillo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animarTexto.css' %}">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">CARD GALLERY</h1>
+            <p>These are all of the cards that you can obtain by playing the game.</p>
+        </div>
+        <div class="carta-container">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 1">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 2">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 3">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 4">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 5">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 6">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 7">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 8">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 9">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 10">
+
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 11">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 12">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 13">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 14">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 15">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 16">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 17">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 18">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 19">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 20">
+        </div>
+    </div>
+</body>
+<script src="{% static 'efectos/cartas3D.js' %}"></script>
+</html>

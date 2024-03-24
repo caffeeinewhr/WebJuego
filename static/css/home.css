@@ -11,17 +11,17 @@
 }
 
 body {
-    background-color: #0c0c0c;
+    background-color: rgb(15, 15, 15);
     color: white;
     padding: 1%;
 }
 
 .content {
-    margin-left: 6.5%;
-    background-color: rgb(10, 10, 10);
+    margin-left: 10%;
+    background-color: rgb(17, 17, 17);
     color: white;
-    border-radius: 28px;
-    padding: 20px;
+    border-radius: 12px;
+    padding: 1%;
 }
 
 .carta-container {
@@ -29,8 +29,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.088), 0 3px 6px rgba(0, 0, 0, 0.1);
-    background-color: rgb(8, 8, 8);
+    background-color: rgb(15, 15, 15);
+    margin: 1%;
     padding: 1%;
-    border-radius: 28px;
+    border-radius: 12px;
     overflow: hidden;
 }
