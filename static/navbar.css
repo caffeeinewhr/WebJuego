@@ -1,0 +1,37 @@
+.side-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 6.5%;
+    height: 100%;
+    padding: 1%;
+    background-color: rgb(10, 10, 10);
+}
+
+.side-navbar .nav-item {
+    align-items: center;
+    color: #ffffff;
+    background: rgb(15, 15, 15);
+    padding: 10px;
+    margin-bottom: 30%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 28px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.088), 0 3px 6px rgba(0, 0, 0, 0.1);
+
+    &:active {
+        color: #ff5a83;
+    }
+}
+
+.side-navbar .nav-item-img {
+    align-items: center;
+    margin-bottom: 30%;
+    cursor: pointer;
+    border-radius: 28px;
+}
+
+.side-navbar .nav-item-img img {
+    border-radius: 28px;
+    width: 100%;
+}
