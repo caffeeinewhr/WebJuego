@@ -3,19 +3,23 @@
 {% load static %}
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sleepy Rush</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
-    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
-    <link rel="stylesheet" href="{% static 'css/brillo.css' %}">
-    <link rel="stylesheet" href="{% static 'css/animarTexto.css' %}">
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
-    <link rel="stylesheet" href="{% static 'js/cartas3D.css' %}">
 </head>
 
 <body>
     {% include 'navbar.html' %}
+
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">SUPPORT US</h1>
+            <p>Play the game on itch.io if you want and look other projects we have done!.</p>
+            <br>
+            <iframe frameborder="0"
+                src="https://itch.io/embed/2712313?linkback=true&amp;border_width=5&amp;bg_color=1e1e1e&amp;fg_color=ffffff&amp;link_color=dc1f55&amp;border_color=ff164b"
+                width="560" height="175"><a href="https://caffeeinewhore.itch.io/sleepy-rush">Sleepy Rush</a></iframe>
+        </div>
+    </div>
+    <br>
     <div class="content brillo-constante">
         <div style="text-align: center;">
             <h1 class="animar-texto">COLLECT CARDS</h1>
@@ -50,5 +54,6 @@
         </div>
     </div>
 </body>
-<script src="{% static 'efectos/cartas3D.js' %}"></script>
+<script src="{% static 'js/cartas3D.js' %}"></script>
+
 </html>

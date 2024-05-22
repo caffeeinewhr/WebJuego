@@ -6,22 +6,25 @@
     &:before {
         content: '';
         border-radius: 12px;
-        background: linear-gradient(45deg, #ff575700, #ff5757ad, #ff575759, #ff5757ad, #ff575759, #ff5757ad, #ff575700);
+        background: linear-gradient(45deg, #ff575700, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff575700);
         position: absolute;
         top: -2px;
         left: -2px;
         background-size: 400%;
-        z-index: -1; /* z-index -1 para que esté detrás del contenido */
+        z-index: -1;
+        /* z-index -1 para que esté detrás del contenido */
         filter: blur(5px);
         width: calc(100% + 4px);
         height: calc(100% + 4px);
         animation: brillar 10s linear infinite;
-        opacity: 0; /* Ocultar inicialmente el brillo */
+        opacity: 0;
+        /* Ocultar inicialmente el brillo */
         transition: opacity 0.1s ease-in-out;
     }
 
     &:hover:before {
-        opacity: 1; /* Al pasar el mouse, opacidad a 1 */
+        opacity: 1;
+        /* Al pasar el mouse, opacidad a 1 */
     }
 }
 
@@ -33,12 +36,13 @@
     &:before {
         content: '';
         border-radius: 12px;
-        background: linear-gradient(45deg, #ff57570e, #ff5757ad, #ff575759, #ff5757ad, #ff575759, #ff5757ad, #ff57570e);
+        background: linear-gradient(45deg, #ff57570e, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff57570e);
         position: absolute;
         top: -2px;
         left: -2px;
         background-size: 400%;
-        z-index: -1; /* z-index -1 para que esté detrás del contenido */
+        z-index: -1;
+        /* z-index -1 para que esté detrás del contenido */
         filter: blur(100px);
         width: calc(100% + 1px);
         height: calc(100% + 1px);
@@ -50,9 +54,11 @@
     0% {
         background-position: 0 0;
     }
+
     50% {
         background-position: 400% 0;
     }
+
     100% {
         background-position: 0 0;
     }

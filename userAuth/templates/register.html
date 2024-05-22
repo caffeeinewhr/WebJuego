@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Register</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">REGISTER</h1>
+            <form method="POST" action="{% url 'register' %}">
+                {% csrf_token %}
+                {% for field in form %}
+                <div>
+                    <label for="{{ field.id_for_label }}">{{ field.label }}:</label>
+                    <br>
+                    {{ field }}
+                </div>
+                <br>
+                {% endfor %}
+                <button type="submit">Enviar</button>
+            </form>
+            {% if message %}<h2 class="animar-texto">{{ message }}</h2>{% endif %}
+        </div>
+    </div>
+</body>
+
+</html>

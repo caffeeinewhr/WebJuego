@@ -1,9 +1,9 @@
 .animar-texto {
     background-image: linear-gradient(-225deg,
-        #ff5757 0%,
-        #ff5757d7 29%,
-        #ff5757ad 67%,
-        #ff57578a 100%);
+            #ff4c6b 0%,
+            #dd435c 29%,
+            #b9394e 67%,
+            #9b3143 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
