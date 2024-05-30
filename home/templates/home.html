@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <title>Sleepy Rush</title>
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">SUPPORT US</h1>
+            <p>Play the game on itch.io if you want and look other projects we have done!.</p>
+            <br>
+            <iframe frameborder="0"
+                src="https://itch.io/embed/2712313?linkback=true&amp;border_width=5&amp;bg_color=1e1e1e&amp;fg_color=ffffff&amp;link_color=dc1f55&amp;border_color=ff164b"
+                width="560" height="175"><a href="https://caffeeinewhore.itch.io/sleepy-rush">Sleepy Rush</a></iframe>
+        </div>
+    </div>
+    <br>
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">COLLECT CARDS</h1>
+            <p>Each one has a unique art, story and effect in the game.</p>
+        </div>
+        <div class="carta-container">
+            <img class="carta tipo_damage" src="{% static 'img/card1.png' %}" alt="Card 1">
+            <img class="carta tipo_tempo" src="{% static 'img/card2.png' %}" alt="Card 2">
+            <img class="carta tipo_especial" src="{% static 'img/card3.png' %}" alt="Card 3">
+        </div>
+    </div>
+    <br>
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">SLAY MONSTERS</h1>
+            <p>Until you acomplish your goal of scaping the nightmare.</p>
+        </div>
+        <div class="carta-container">
+            <img class="carta" src="{% static 'img/card1.png' %}" alt="Card 1">
+            <img class="carta" src="{% static 'img/card2.png' %}" alt="Card 2">
+            <img class="carta" src="{% static 'img/card3.png' %}" alt="Card 3">
+        </div>
+    </div>
+    <br>
+    <div class="content brillo-constante">
+        <div style="text-align: center;">
+            <h1 class="animar-texto">DON'T RUN OUT OF TIME</h1>
+            <p>The nightmare is consuming you each second.</p>
+        </div>
+        <div class="carta-container">
+            <img class="carta brillo" src="{% static 'img/time.gif' %}" alt="Watch">
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/cartas3D.js' %}"></script>
+
+</html>

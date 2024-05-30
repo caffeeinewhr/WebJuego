@@ -1,0 +1,31 @@
+.carta-container {
+    perspective: 100em;
+}
+
+.carta {
+    margin: 2%;
+    width: 20%;
+    height: 20%;
+    transition: 0.5s;
+    object-fit: cover;
+    overflow: hidden;
+
+    border: 6px solid #ffffff;
+    border-radius: 2%;
+}
+
+.carta:hover {
+    transition: 0.1s;
+}
+
+.tipo_damage {
+    border: 6px solid #ff4c6b;
+}
+
+.tipo_tempo {
+    border: 6px solid #5bb0ff;
+}
+
+.tipo_especial {
+    border: 6px solid #e6ff5b;
+}
