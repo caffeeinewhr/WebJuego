@@ -1,6 +1,5 @@
-# myapp/middleware.py
-
-class CustomCORSMiddleware:
+# middleware.py
+class CrossOriginIsolationMiddleware:
     def __init__(self, get_response):
         self.get_response = get_response
 
@@ -8,5 +7,4 @@ class CustomCORSMiddleware:
         response = self.get_response(request)
         response['Cross-Origin-Opener-Policy'] = 'same-origin'
         response['Cross-Origin-Embedder-Policy'] = 'require-corp'
-        response['Access-Control-Allow-Origin'] = '*'
         return response

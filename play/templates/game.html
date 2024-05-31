@@ -9,14 +9,11 @@
 <body>
     {% include 'navbar.html' %}
     <div class="content brillo-constante">
-        <script type="text/javascript">
-            var username = "{{ username }}";
-            var baseUrl = "https://itch.io/embed-upload/10438054?color=000000";
-            var gameUrl = baseUrl + "&username=" + encodeURIComponent(username);
-            document.write('<iframe frameborder="0" src="' + gameUrl + '" allowfullscreen="" width="1024" height="576"></iframe>');
-        </script>
-        <!-- <iframe frameborder="0" src="https://itch.io/embed-upload/10438054?color=333333" allowfullscreen="" width="640"
-            height="380"><a href="https://caffeeinewhore.itch.io/sleepy-rush">Play Sleepy Rush on itch.io</a></iframe> -->
+        <iframe frameborder="0" src="https://itch.io/embed-upload/10438054?color=333333" allowfullscreen="" width="640" height="380">
+            <a href="https://caffeeinewhore.itch.io/sleepy-rush">
+                Play Sleepy Rush on itch.io
+            </a>
+        </iframe>
     </div>
 </body>
 
