@@ -5,7 +5,7 @@
 
     &:before {
         content: '';
-        border-radius: 12px;
+        border-radius: 4px;
         background: linear-gradient(45deg, #ff575700, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff575700);
         position: absolute;
         top: -2px;
@@ -19,7 +19,7 @@
         animation: brillar 10s linear infinite;
         opacity: 0;
         /* Ocultar inicialmente el brillo */
-        transition: opacity 0.1s ease-in-out;
+        transition: opacity 0.05s ease-in-out;
     }
 
     &:hover:before {
@@ -35,7 +35,7 @@
 
     &:before {
         content: '';
-        border-radius: 12px;
+        border-radius: 4px;
         background: linear-gradient(45deg, #ff57570e, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff57570e);
         position: absolute;
         top: -2px;

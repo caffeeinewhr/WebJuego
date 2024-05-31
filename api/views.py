@@ -16,5 +16,5 @@ def user_id(request):
             return JsonResponse(user_data)
         except User.DoesNotExist:
             return JsonResponse({'error': 'User not found'}, status=404)
-    else:
+    else: 
         return JsonResponse({'error': 'User not logged in'}, status=401)

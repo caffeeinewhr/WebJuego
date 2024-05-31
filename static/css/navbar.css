@@ -17,7 +17,7 @@
     margin-bottom: 15%;
     width: 100%;
     border: 1px solid #292929;
-    border-radius: 12px;
+    border-radius: 4px;
     padding: 10%;
     cursor: pointer;
     text-decoration: none;
@@ -30,10 +30,10 @@
 .side-navbar .nav-item-img {
     margin-bottom: 20%;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 .side-navbar .nav-item-img img {
-    border-radius: 12px;
+    border-radius: 4px;
     width: 100%;
 }
