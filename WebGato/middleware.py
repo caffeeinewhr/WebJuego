@@ -7,5 +7,6 @@ class CustomCORSMiddleware:
     def __call__(self, request):
         response = self.get_response(request)
         response['Cross-Origin-Opener-Policy'] = 'same-origin'
-        response['Cross-Origin-Embedder-Policy'] = 'same-origin'
+        response['Cross-Origin-Embedder-Policy'] = 'require-corp'
+        response['Access-Control-Allow-Origin'] = '*'
         return response

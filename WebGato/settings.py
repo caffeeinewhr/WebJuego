@@ -35,7 +35,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    # 'WebGato.middleware.CustomCORSMiddleware',
+    'WebGato.middleware.CustomCORSMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -122,6 +123,9 @@ STATICFILES_DIRS = [
 
 # Add this line to specify the directory where static files will be collected
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Add this setting to allow Whitenoise to compress static files and serve them efficiently
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
