@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cross-Origin-Embedder-Policy" content="credentialless">
     <title>Sleepy Rush</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'img\favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/dropdown.css' %}">
     <link rel="stylesheet" href="{% static 'css/cartas3D.css' %}">
     <link rel="stylesheet" href="{% static 'css/brillo.css' %}">
     <link rel="stylesheet" href="{% static 'css/animarTexto.css' %}">
@@ -14,9 +15,16 @@
 </head>
 
 <nav class="side-navbar">
-    <a class="nav-item brillo" href="{% url 'logout' %}">LOGOUT</a>
-    <a class="nav-item brillo" href="{% url 'login' %}">LOGIN</a>
-    <a class="nav-item brillo" href="{% url 'register' %}">REGISTER</a>
+    <div class="user-dropdown">
+        <button class="user-dropdown-btn">
+            <img src="{% static 'img/user-icon.png' %}" alt="User Icon">
+        </button>
+        <div class="user-dropdown-content">
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'logout' %}">Logout</a>
+            <a href="{% url 'register' %}">Register</a>
+        </div>
+    </div>
     <br>
     <br>
     <a class="nav-item brillo" href="{% url 'home' %}">HOME</a>
