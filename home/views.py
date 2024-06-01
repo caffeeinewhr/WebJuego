@@ -1,4 +1,14 @@
 from django.shortcuts import render
 
 def home(request):
-    return render(request, 'home.html')
+    username = request.session.get('username')
+    authenticated = False
+    
+    if username:
+        authenticated = True
+    
+    context = {
+        'authenticated': authenticated
+    }
+    
+    return render(request, 'home.html', context)

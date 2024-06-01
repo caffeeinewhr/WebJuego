@@ -10,35 +10,34 @@
     {% include 'navbar.html' %}
     <div class="content brillo-constante">
         {% if authenticated %}
-        <h1>Your Stadistics</h1>
-        <hr>
-        <br>
-        <h2>Username: <strong>{{ userStats.user.username }}</strong></h2>
-        <br>
-        <div>
-            <p><strong>Total playtime:</strong> {{ userStats.playtime }} h</p>
-            <p><strong>Levels completed:</strong> {{ userStats.levels_completed }}</p>
-            <p><strong>Enemies Killed:</strong> {{ userStats.killed }}</p>
-            <p><strong>Deaths:</strong> {{ userStats.deaths }}</p>
+        <div class="container-texto">
+            <h1 class="animar-texto">Your Stadistics</h1>
+            <br><br>
+            <h2><span class="material-icons animar-texto">person</span> Username: <strong>{{ userStats.user.username }}</strong></h2>
+            <br><br>
+            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ userStats.playtime }} h</p><br>
+            <p><span class="material-icons animar-texto">check_circle_outline</span> <strong>Levels completed:</strong> {{ userStats.levels_completed }}</p><br>
+            <p><span class="material-icons animar-texto">highlight_off</span> <strong>Enemies Killed:</strong> {{ userStats.killed }}</p><br>
+            <p><span class="material-icons animar-texto">mood_bad</span> <strong>Deaths:</strong> {{ userStats.deaths }}</p>
         </div>
         <br>
         {% endif %}
-        <h1>Worldwide Stadistics</h1>
-        <hr>
-        <br>
-        <div>
-            <p><strong>Total playtime:</strong> {{ worldwideStats.playtime }} h</p>
-            <p><strong>Levels completed:</strong> {{ worldwideStats.levelsCompleted }}</p>
-            <p><strong>Enemies Killed:</strong> {{ worldwideStats.kills }}</p>
-            <p><strong>Deaths:</strong> {{ worldwideStats.deaths }}</p>
+        <div class="container-texto">
+            <h1 class="animar-texto">Worldwide Stadistics</h1>
+            <br><br>
+            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ worldwideStats.playtime }} h</p> <br>
+            <p><span class="material-icons animar-texto">check_circle_outline</span> <strong>Levels completed:</strong> {{ worldwideStats.levelsCompleted }}</p> <br>
+            <p><span class="material-icons animar-texto">highlight_off</span> <strong>Enemies Killed:</strong> {{ worldwideStats.kills }}</p> <br>
+            <p><span class="material-icons animar-texto">mood_bad</span> <strong>Deaths:</strong> {{ worldwideStats.deaths }}</p>
         </div>
+
         {% if not authenticated %}
         <br>
         <p>You need to log in in order to see your stats.</p>
         <hr>
         <br>
-        <a href="{% url 'login' %}?next={{ request.path }}">Login</a> | <a
-            href="{% url 'register' %}?next={{ request.path }}">Register</a>
+        <a href="{% url 'login' %}?next={{ request.path }}" class="animar-texto">Login</a> | <a
+            href="{% url 'register' %}?next={{ request.path }}" class="animar-texto">Register</a>
         {% endif %}
     </div>
 </body>

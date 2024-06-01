@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Cross-Origin-Embedder-Policy" content="credentialless">
     <title>Sleepy Rush</title>
     <link rel="icon" type="image/x-icon" href="{% static 'img\favicon.ico' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
@@ -12,24 +11,47 @@
     <link rel="stylesheet" href="{% static 'css/brillo.css' %}">
     <link rel="stylesheet" href="{% static 'css/animarTexto.css' %}">
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forms.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <nav class="side-navbar">
-    <div class="user-dropdown">
-        <button class="user-dropdown-btn">
-            <img src="{% static 'img/user-icon.png' %}" alt="User Icon">
+    <div class="user-dropdown" class="nav-item">
+        <button class="user-dropdown-btn nav-item brillo">
+            <span class="material-icons">account_box</span> ACCOUNT
         </button>
         <div class="user-dropdown-content">
-            <a href="{% url 'login' %}">Login</a>
-            <a href="{% url 'logout' %}">Logout</a>
-            <a href="{% url 'register' %}">Register</a>
+            {% if authenticated %}
+            <a href="{% url 'logout' %}" class="brillo">
+                <span class="material-icons">logout</span> Logout
+            </a>
+            {% else %}
+            <br>
+            <a href="{% url 'login' %}" class="brillo">
+                <span class="material-icons">login</span> Login
+            </a>
+            <br>
+            <a href="{% url 'register' %}" class="brillo">
+                <span class="material-icons">person_add</span> Register
+            </a>
+            {% endif %}
         </div>
     </div>
     <br>
     <br>
-    <a class="nav-item brillo" href="{% url 'home' %}">HOME</a>
-    <a class="nav-item brillo" href="{% url 'play' %}">PLAY</a>
-    <a class="nav-item brillo" href="{% url 'stats' %}">STATS</a>
-    <a class="nav-item brillo" href="{% url 'cards' %}">CARDS</a>
-    <a class="nav-item brillo" href="{% url 'about' %}">ABOUT</a>
+    <a class="nav-item brillo" href="{% url 'home' %}">
+        <span class="material-icons">home</span> HOME
+    </a>
+    <a class="nav-item brillo" href="{% url 'play' %}">
+        <span class="material-icons">sports_esports</span> PLAY
+    </a>
+    <a class="nav-item brillo" href="{% url 'stats' %}">
+        <span class="material-icons">query_stats</span> STATS
+    </a>
+    <a class="nav-item brillo" href="{% url 'cards' %}">
+        <span class="material-icons">style</span> CARDS
+    </a>
+    <a class="nav-item brillo" href="{% url 'about' %}">
+        <span class="material-icons">help</span> ABOUT
+    </a>
 </nav>
