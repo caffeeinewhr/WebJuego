@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ge^l+_ocw58!ojs7w-t*-6(0mi=afa2&!pn-5076mocwzzh9#z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['webgato.onrender.com', 'localhost', '127.0.0.1']
 
 # Application definition
@@ -23,7 +23,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
+    # 'corsheaders',
     'api',
     'userAuth',
     'home',
@@ -36,10 +36,10 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'WebGato.middleware.CrossOriginIsolationMiddleware',
-    'WebGato.middleware.CrossOriginResourcePolicyMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
+    # 'WebGato.middleware.CrossOriginIsolationMiddleware',
+    # 'WebGato.middleware.CrossOriginResourcePolicyMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

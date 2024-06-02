@@ -19,8 +19,8 @@
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     
     z-index: 1000;
-    top: 100%;
-    left: 5;
+    top: 0;
+    left: 101%;
 }
 
 .user-dropdown-content a {
@@ -29,6 +29,7 @@
     color: white;
     background-color: #161616;
     padding: 8px;
+    margin: 8px;
     border-radius: 4px;
     cursor: default;
 }
