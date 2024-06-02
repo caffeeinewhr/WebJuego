@@ -1,18 +1,351 @@
-<!DOCTYPE html>
 <html lang="en">
-{% load static %}
 
 <head>
-    <title>Game</title>
+    <meta charset="UTF-8">
+    <title>SleepyRush</title>
+    <meta content="#0a0a0a" name="theme-color">
+    <meta property="og:image" content="https://img.itch.zone/aW1nLzE2MzYzMzg0LnBuZw==/original/IHFs3w.png">
+    <link type="image/png" href="https://img.itch.zone/aW1nLzE2MzYzMzg0LnBuZw==/32x32%23/S6LaAx.png" rel="icon">
+    <meta property="og:site_name" content="itch.io">
+    <meta property="twitter:account_id" content="4503599627724030">
+    <meta property="og:description" content="Cat card game where your main goal is to not run out of time before scaping the nightmare!">
+    <meta content="Cat card game where your main goal is to not run out of time before scaping the nightmare!" name="description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="games/2712313" name="itch:path">
+    <meta content="@itchio" name="twitter:site">
+    <meta content="Sleepy Rush by caffeeinewhore" name="twitter:title">
+    <meta content="Cat card game where your main goal is to not run out of time before scaping the nightmare! Play in your browser" name="twitter:description">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta property="twitter:image" content="https://img.itch.zone/aW1nLzE2MzYzMzg0LnBuZw==/508x254%23mb/oDMGaN.png">
+    <meta content="https://caffeeinewhore.itch.io/sleepy-rush" name="twitter:url">
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-36R7NPBMLS" async=""></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-36R7NPBMLS" async=""></script>
+    <script type="application/ld+json">
+        {"itemListElement":[{"item":{"@id":"https:\/\/itch.io\/games","name":"Games"},"@type":"ListItem","position":1},{"item":{"@id":"https:\/\/itch.io\/games\/tag-card-game","name":"Card Game"},"@type":"ListItem","position":2},{"item":{"@id":"https:\/\/itch.io\/games\/free","name":"Free"},"@type":"ListItem","position":3}],"@type":"BreadcrumbList","@context":"http:\/\/schema.org"}
+    </script>
+    <script type="application/ld+json">
+        {"@context":"http:\/\/schema.org\/","@type":"Product","description":"Cat card game where your main goal is to not run out of time before scaping the nightmare!","name":"Sleepy Rush"}
+    </script>
+    <meta name="csrf_token" value="WyJZd1pUIiwxNzE3MzQ2NDY3LCJZN2lZVGZrOUROVUtKVzEiXQ==.iCFt6KOblD27hK3iKLG4gTCBJb0=">
+    <link href="https://static.itch.io/game.css?1717217660" rel="stylesheet">
+    <script type="text/javascript">window.itchio_translations_url = 'https://static.itch.io/translations';</script>
+    <script src="https://static.itch.io/lib.min.js?1717217660" type="text/javascript"></script>
+    <script src="https://static.itch.io/bundle.min.js?1717217660" type="text/javascript"></script>
+    <script src="https://static.itch.io/lib/jquery.maskMoney.js" type="text/javascript"></script>
+    <script data-src="https://static.itch.io/react.min.js?1717217660" id="lib_react_src"></script>
+    <script src="https://static.itch.io/game.min.js?1717217660" type="text/javascript"></script>
+    <script type="text/javascript">
+        I.current_user = null; 
+        I.subdomain = true; 
+        I.coep_set = true;
+    </script>
+    <script type="text/javascript">
+        if (!window.location.hostname.match(/localhost/)) {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', "G-36R7NPBMLS", {});
+            (function (d, t, s, m) {
+                s = d.createElement(t);
+                s.src = "https:\/\/www.googletagmanager.com\/gtag\/js?id=G-36R7NPBMLS";
+                s.async = 1;
+                m = d.getElementsByTagName(t)[0];
+                m.parentNode.insertBefore(s, m);
+            })(document, "script");
+        }
+    </script>
+    <style type="text/css" id="game_theme">
+        :root {
+            --itchio_ui_bg: #2a2a2a;
+            --itchio_ui_bg_dark: #242424
+        }
+
+        .wrapper {
+            --itchio_font_family: Lato;
+            --itchio_bg_color: #0a0a0a;
+            --itchio_bg2_color: rgba(10, 10, 10, 1);
+            --itchio_bg2_sub: #222222;
+            --itchio_text_color: #ffffff;
+            --itchio_link_color: #d40017;
+            --itchio_border_color: #303030;
+            --itchio_button_color: #d40017;
+            --itchio_button_fg_color: #ffffff;
+            --itchio_button_shadow_color: #f01c33;
+            background-color: #0a0a0a;
+            /*! */
+            /* */
+        }
+
+        .inner_column {
+            color: #ffffff;
+            font-family: Lato, Lato, LatoExtended, sans-serif;
+            background-color: rgba(10, 10, 10, 1)
+        }
+
+        .inner_column ::selection {
+            color: #ffffff;
+            background: #d40017
+        }
+
+        .inner_column ::-moz-selection {
+            color: #ffffff;
+            background: #d40017
+        }
+
+        .inner_column h1,
+        .inner_column h2,
+        .inner_column h3,
+        .inner_column h4,
+        .inner_column h5,
+        .inner_column h6 {
+            font-family: inherit;
+            font-weight: 900;
+            color: inherit
+        }
+
+        .inner_column a,
+        .inner_column .footer a {
+            color: #d40017
+        }
+
+        .inner_column .button,
+        .inner_column .button:hover,
+        .inner_column .button:active {
+            background-color: #d40017;
+            color: #ffffff;
+            text-shadow: 0 1px 0px #f01c33
+        }
+
+        .inner_column hr {
+            background-color: #303030
+        }
+
+        .inner_column table {
+            border-color: #303030
+        }
+
+        .inner_column .redactor-box .redactor-toolbar li a {
+            color: #d40017
+        }
+
+        .inner_column .redactor-box .redactor-toolbar li a:hover,
+        .inner_column .redactor-box .redactor-toolbar li a:active,
+        .inner_column .redactor-box .redactor-toolbar li a.redactor-act {
+            background-color: #d40017 !important;
+            color: #ffffff !important;
+            text-shadow: 0 1px 0px #f01c33 !important
+        }
+
+        .inner_column .redactor-box .redactor-toolbar .re-button-tooltip {
+            text-shadow: none
+        }
+
+        .game_frame {
+            background: #222222;
+            /*! */
+            /* */
+        }
+
+        .game_frame .embed_info {
+            background-color: rgba(10, 10, 10, 0.85)
+        }
+
+        .game_loading .loader_bar .loader_bar_slider {
+            background-color: #d40017
+        }
+
+        .view_game_page .reward_row,
+        .view_game_page .bundle_row {
+            border-color: #222222 !important
+        }
+
+        .view_game_page .game_info_panel_widget {
+            background: rgba(34, 34, 34, 1)
+        }
+
+        .view_game_page .star_value .star_fill {
+            color: #d40017
+        }
+
+        .view_game_page .rewards .quantity_input {
+            background: rgba(34, 34, 34, 1);
+            border-color: rgba(255, 255, 255, 0.5);
+            color: #ffffff
+        }
+
+        .view_game_page .right_col {
+            display: none
+        }
+
+        .game_devlog_page li .meta_row .post_likes {
+            border-color: #222222
+        }
+
+        .game_devlog_post_page .post_like_button {
+            box-shadow: inset 0 0 0 1px #303030
+        }
+
+        .game_comments_widget .community_post .post_footer a,
+        .game_comments_widget .community_post .post_footer .vote_btn,
+        .game_comments_widget .community_post .post_header .post_date a,
+        .game_comments_widget .community_post .post_header .edit_message {
+            color: rgba(255, 255, 255, 0.5)
+        }
+
+        .game_comments_widget .community_post .reveal_full_post_btn {
+            background: linear-gradient(to bottom, transparent, #0a0a0a 50%, #0a0a0a);
+            color: #d40017
+        }
+
+        .game_comments_widget .community_post .post_votes {
+            border-color: rgba(255, 255, 255, 0.2)
+        }
+
+        .game_comments_widget .community_post .post_votes .vote_btn:hover {
+            background: rgba(255, 255, 255, 0.05)
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn {
+            border-color: rgba(255, 255, 255, 0.5)
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn span {
+            color: inherit
+        }
+
+        .game_comments_widget .community_post .post_footer .vote_btn:hover,
+        .game_comments_widget .community_post .post_footer .vote_btn.voted {
+            background-color: #d40017;
+            color: #ffffff;
+            text-shadow: 0 1px 0px #f01c33;
+            border-color: #d40017
+        }
+
+        .game_comments_widget .form .redactor-box,
+        .game_comments_widget .form .click_input,
+        .game_comments_widget .form .forms_markdown_input_widget {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: transparent
+        }
+
+        .game_comments_widget .form .redactor-layer,
+        .game_comments_widget .form .redactor-toolbar,
+        .game_comments_widget .form .click_input,
+        .game_comments_widget .form .forms_markdown_input_widget {
+            background: rgba(34, 34, 34, 1)
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button {
+            color: inherit;
+            opacity: 0.6
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active {
+            opacity: 1;
+            background-color: #d40017 !important;
+            color: #ffffff !important;
+            text-shadow: 0 1px 0px #f01c33 !important
+        }
+
+        .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,
+        .game_comments_widget .form .forms_markdown_input_widget li {
+            border-color: rgba(255, 255, 255, 0.5)
+        }
+
+        .game_comments_widget .form textarea {
+            border-color: rgba(255, 255, 255, 0.5);
+            background: rgba(34, 34, 34, 1);
+            color: inherit
+        }
+
+        .game_comments_widget .form .redactor-toolbar {
+            border-color: rgba(255, 255, 255, 0.5)
+        }
+
+        .game_comments_widget .hint {
+            color: rgba(255, 255, 255, 0.5)
+        }
+
+        .game_community_preview_widget .community_topic_row .topic_tag {
+            background-color: #222222
+        }
+
+        .footer .svgicon,
+        .view_game_page .more_information_toggle .svgicon {
+            fill: #ffffff !important
+        }
+    </style>
 </head>
 
-<body>
+<body class="embedded_game locale_en game_layout_widget layout_widget no_theme_toggle responsive" data-host="itch.io"
+    data-page_name="view_game">
     {% include 'navbar.html' %}
+
     <div class="content brillo-constante">
-        <iframe frameborder="0" src="https://itch.io/embed-upload/10554445?color=0a0a0a" allowfullscreen="" 
-            width="100%" height="625" style="border-radius: 4px;">
-            <a href="https://caffeeinewhore.itch.io/sleepy-rush">Play Sleepy Rush on itch.io</a>
-        </iframe>
+        <script type="text/javascript">new I.GameUserTools('#user_tools')</script>
+        <div class="main wrapper" id="wrapper">
+            <div class="inner_column size_large family_lato" id="inner_column" style="min-height: 697px;">
+                <div class="header" id="header"><h1 class="game_title" itemprop="name">Sleepy Rush</h1></div>
+                <div class="view_html_game_page view_game_page page_widget base_widget ready"
+                    id="view_html_game_8615359">
+                    <div class="html_embed_widget base_widget embed_wrapper" id="html_embed_8336445">
+                        <div class="game_frame game_loaded" data-width="640" data-height="360" style="width: 640px; height: 360px">
+                            <button class="fullscreen_btn" title="Enter fullscreen">
+                                <img src="https://itch.io/static/images/enlarge.svg?1717217660">
+                            </button>
+                            <iframe src="https://html.itch.zone/html/10576148/index.html" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" frameborder="0" allowfullscreen="true" id="game_drop" scrolling="no" allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated"></iframe>
+                        </div>
+                    </div>
+                    <div class="columns"></div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">I.setup_layout()</script>
+        <script id="loading_lightbox_tpl" type="text/template">
+            <div aria-live="polite" class="lightbox loading_lightbox">
+                <div class="loader_outer">
+                    <div class="loader_label">Loading</div>
+                    <div class="loader_bar">
+                        <div class="loader_bar_slider"></div>
+                    </div>
+                </div>
+            </div>
+        </script>
+        <script type="text/javascript">
+            init_HtmlEmbed(
+                '#html_embed_8336445', 
+                { 
+                    "width": 640, 
+                    "start_maximized": false, 
+                    "height": 360, 
+                    "popup_url": "https:\/\/itch.io\/embed-upload\/10576148?uuid=8d2f8844bf2797b307592a9da3543569&color=333333" 
+                }
+            ); 
+            new I.CommunityViewTopic(
+                '#community_topic_posts_4806109', 
+                { 
+                    "report_url": "https:\/\/itch.io\/post\/:post_id\/report" 
+                }
+            ); 
+            init_ViewHtmlGame(
+                '#view_html_game_8615359', 
+                { 
+                    "game": { 
+                        "type_name": "html", 
+                        "slug": "sleepy-rush", 
+                        "id": 2712313, 
+                        "actual_price": 0, 
+                        "min_price": 0, 
+                        "type": 5, 
+                        "hit_url": "https:\/\/caffeeinewhore.itch.io\/sleepy-rush\/rh\/eyJyIjoiaHR0cHM6XC9cL2l0Y2guaW9cL2VtYmVkLXVwbG9hZFwvMTA1NTQ0NDU%2fY29sb3I9MGEwYTBhIiwiaWQiOjI3MTIzMTMsImUiOjE3MTczNjUxMjZ9%2exYWvLWMjy3ZFX3q7JLRLBZtTNqk%3d", 
+                        "play_url": "https:\/\/caffeeinewhore.itch.io\/sleepy-rush\/rp\/eyJpZCI6MjcxMjMxMywicm4iOjkwNzMzLCJtIjoxNzE3MzY1MjAxLCJlIjoxNzE3MzY1MjYxfQ%3d%3d%2emyRRsP%2beEZlfuJMjhxK15C9IozI%3d", 
+                        "play_after": 90 
+                    } 
+                }
+            );
+            I.setup_page();
+        </script>
     </div>
 </body>
 

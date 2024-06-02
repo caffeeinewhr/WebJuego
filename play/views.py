@@ -27,6 +27,6 @@ def play(request):
     
     # Set the necessary headers for cross-origin isolation
     response['Cross-Origin-Opener-Policy'] = 'same-origin'
-    response['Cross-Origin-Embedder-Policy'] = 'cross-origin'
+    response['Cross-Origin-Embedder-Policy'] = 'require-corp'
     
     return response
