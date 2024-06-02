@@ -15,7 +15,7 @@ def play(request):
         }
         
         # Use the render function to generate the response
-        response = render(request, 'index.html', context)
+        response = render(request, 'itchio.html', context)
     else:
         context = {
             'username': '',
@@ -27,6 +27,6 @@ def play(request):
     
     # Set the necessary headers for cross-origin isolation
     response['Cross-Origin-Opener-Policy'] = 'same-origin'
-    response['Cross-Origin-Embedder-Policy'] = 'require-corp'
+    response['Cross-Origin-Embedder-Policy'] = 'cross-origin'
     
     return response
