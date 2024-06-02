@@ -1,0 +1,65 @@
+.brillo {
+    border: none;
+    outline: none;
+    position: relative;
+
+    &:before {
+        content: '';
+        border-radius: 4px;
+        background: linear-gradient(45deg, #ff575700, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff575700);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        /* z-index -1 para que esté detrás del contenido */
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: brillar 10s linear infinite;
+        opacity: 0;
+        /* Ocultar inicialmente el brillo */
+        transition: opacity 0.05s ease-in-out;
+    }
+
+    &:hover:before {
+        opacity: 1;
+        /* Al pasar el mouse, opacidad a 1 */
+    }
+}
+
+.brillo-constante {
+    border: none;
+    outline: none;
+    position: relative;
+
+    &:before {
+        content: '';
+        border-radius: 4px;
+        background: linear-gradient(45deg, #ff57570e, #ff4c6b, #bd2c44, #ff4c6b, #bd2c44, #ff4c6b, #ff57570e);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        /* z-index -1 para que esté detrás del contenido */
+        filter: blur(100px);
+        width: calc(100% + 1px);
+        height: calc(100% + 1px);
+        animation: brillar 30s linear infinite;
+    }
+}
+
+@keyframes brillar {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}

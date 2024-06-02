@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'lain';
+    src: url('fonts/lain.ttf');
+}
+
+* {
+    font-family: 'lain', monospace;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 1%;
+}
+
+.content {
+    margin-left: 10%;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border-radius: 4px;
+    padding: 1%;
+}
+
+.carta-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.088), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(15, 15, 15);
+    margin: 1%;
+    padding: 1%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.container-texto {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.088), 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(15, 15, 15);
+    margin: 1%;
+    padding: 1%;
+    border-radius: 4px;
+    overflow: auto;
+}

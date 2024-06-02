@@ -12,7 +12,7 @@ SECRET_KEY = 'django-insecure-ge^l+_ocw58!ojs7w-t*-6(0mi=afa2&!pn-5076mocwzzh9#z
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -23,7 +23,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'corsheaders',
     'api',
     'userAuth',
     'home',
@@ -37,24 +36,14 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'corsheaders.middleware.CorsMiddleware',
-    # 'WebGato.middleware.CrossOriginIsolationMiddleware',
-    # 'WebGato.middleware.CrossOriginResourcePolicyMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'WebGato.middleware.SetMimeTypeMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-# CORS_ALLOW_ALL_ORIGINS = True
-
-# CORS_ALLOWED_ORIGINS = [
-#     'https://caffeeinewhore.itch.io',
-#     'https://itch.io',
-#     'https://webgato.onrender.com',
-# ]
 
 ROOT_URLCONF = 'WebGato.urls'
 
