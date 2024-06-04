@@ -61,3 +61,4 @@ def logout(request):
     if 'username' in request.session:
         del request.session['username']
     return redirect("home")
+

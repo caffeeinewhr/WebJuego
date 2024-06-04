@@ -8,7 +8,8 @@ def home(request):
         authenticated = True
     
     context = {
-        'authenticated': authenticated
+        'authenticated': authenticated,
+        'username': username
     }
     
     return render(request, 'home.html', context)

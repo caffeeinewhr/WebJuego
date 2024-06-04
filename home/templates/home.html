@@ -11,6 +11,25 @@
 
     <div class="content brillo-constante">
         <div style="text-align: center;">
+            {% if username %}
+            <h1 class="animar-texto">Hello, {{ username }}!</h1>
+            {% else %}
+            <h1 class="animar-texto">You are not logged in.</h1>
+            {% endif %}
+            <hr>
+            <br>
+            <button id="apiButton">Call API</button>
+            <br><br>
+            <script>
+                document.getElementById('apiButton').addEventListener('click', function() {
+                    fetch('/api/user/')
+                        .then(response => response.json())
+                        .then(data => console.log('Logged in user:', data.username));
+                });
+            </script>
+        </div>
+        
+        <div style="text-align: center;">
             <h1 class="animar-texto">SUPPORT US</h1>
             <p>Play the game on itch.io if you want and look other projects we have done!.</p>
             <br>
