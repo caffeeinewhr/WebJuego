@@ -23,14 +23,14 @@
         <div class="user-dropdown-content">
             {% if authenticated %}
             <a href="{% url 'logout' %}" class="brillo">
-                <span class="material-icons">logout</span> Logout
+                <span class="material-icons">logout</span> Sign Out
             </a>
             {% else %}
             <a href="{% url 'login' %}" class="brillo">
-                <span class="material-icons">login</span> Login
+                <span class="material-icons">login</span> Sign In
             </a>
             <a href="{% url 'register' %}" class="brillo">
-                <span class="material-icons">person_add</span> Register
+                <span class="material-icons">person_add</span> Sign Up
             </a>
             {% endif %}
         </div>

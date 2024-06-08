@@ -11,7 +11,7 @@
     {% include 'navbar.html' %}
     <div class="content brillo-constante">
         <div class="form-container">
-            <h2 class="animar-texto">REGISTER</h2>
+            <h2 class="animar-texto">SIGN UP</h2>
             <form method="POST" action="{% url 'register' %}">
                 {% csrf_token %}
                 {% for field in form %}
