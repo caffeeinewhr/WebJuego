@@ -10,6 +10,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('auth/', include('userAuth.urls')),
+    path('', home, name='home'),
     path('home/', home, name='home'),
     path('play/', play, name='play'),
     path('cards/', cards, name='cards'),

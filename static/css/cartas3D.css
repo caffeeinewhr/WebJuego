@@ -29,3 +29,8 @@
 .tipo_especial {
     border: 6px solid #e6ff5b;
 }
+
+.sprite {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
