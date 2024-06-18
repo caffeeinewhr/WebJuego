@@ -13,40 +13,36 @@
             <h1 class="animar-texto">CARD GALLERY</h1>
             <p>These are all of the cards that you can obtain by playing the game.</p>
         </div>
-        <br>
-        <hr>
-        <br>
         <!-- Formulario de filtros -->
-        <form method="GET" action="{% url 'cards' %}">
-            <label for="rarity">Rarity:</label>
-            <select name="rarity" id="rarity">
-                <option value="">All</option>
-                <option value="common">Common</option>
-                <option value="uncommon">Uncommon</option>
-                <option value="rare">Rare</option>
-            </select>
-
-            <label for="cost">Cost:</label>
-            <select name="cost" id="cost">
-                <option value="">All</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4+</option>
-            </select>
-
-            <label for="sort">Sort by:</label>
-            <select name="sort" id="sort">
-                <option value="name">Name</option>
-                <option value="cost">Cost</option>
-                <option value="rarity">Rarity</option>
-            </select>
-
-            <button type="submit">Filter</button>
-        </form>
-        <br>
-        <hr>
-        <br>
+        <center>
+            <form method="GET" action="{% url 'cards' %}" class="filter-form-container">
+                <label for="rarity">Rarity:</label>
+                <select name="rarity" id="rarity">
+                    <option value="">All</option>
+                    <option value="common">Common</option>
+                    <option value="uncommon">Uncommon</option>
+                    <option value="rare">Rare</option>
+                </select>
+                
+                <label for="cost">Cost:</label>
+                <select name="cost" id="cost">
+                    <option value="">All</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4+</option>
+                </select>
+    
+                <label for="sort">Sort by:</label>
+                <select name="sort" id="sort">
+                    <option value="name">Name</option>
+                    <option value="cost">Cost</option>
+                    <option value="rarity">Rarity</option>
+                </select>
+    
+                <button type="submit">Filter</button>
+            </form>
+        </center>
         <div class="carta-container">
             {% for card in cards %}
             <img class="carta sprite" src="{% static card.image_url %}" alt="{{ card.name }}">

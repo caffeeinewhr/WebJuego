@@ -1,0 +1,39 @@
+.filter-form-container {
+    background-color: rgb(17, 17, 17);
+    padding: 1%;
+    margin: 2% auto;
+    border-radius: 4px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-form-container h2 {
+    color: white;
+}
+
+.filter-form-container label {
+    color: white;
+}
+
+.filter-form-container select {
+    padding: 0.5rem;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    font-family: 'lain', monospace;
+}
+
+.filter-form-container button {
+    padding: 0.75rem;
+    background-color: #292929;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: 'lain', monospace;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-form-container button:hover {
+    background-color: #ff4c6b;
+}
