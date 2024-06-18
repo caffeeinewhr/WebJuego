@@ -23,7 +23,7 @@
                     <option value="uncommon">Uncommon</option>
                     <option value="rare">Rare</option>
                 </select>
-                
+
                 <label for="cost">Cost:</label>
                 <select name="cost" id="cost">
                     <option value="">All</option>
@@ -49,6 +49,7 @@
             {% endfor %}
         </div>
     </div>
+    {% include 'footer.html' %}
 </body>
 <script src="{% static 'js/cartas3D.js' %}"></script>
 

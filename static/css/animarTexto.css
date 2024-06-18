@@ -14,6 +14,22 @@
     display: inline-block;
 }
 
+.animar-texto-blanco {
+    background-image: linear-gradient(-225deg,
+            #ffffff 0%,
+            #f3ebed 29%,
+            #e9dcdf 67%,
+            #e0d0d4 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textoAnimacion 1s linear infinite;
+    display: inline-block;
+}
+
 @keyframes textoAnimacion {
     to {
         background-position: 200% center;

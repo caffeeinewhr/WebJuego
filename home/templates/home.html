@@ -10,22 +10,17 @@
     {% include 'navbar.html' %}
 
     <div class="content brillo-constante">
-        <div style="text-align: center;">
-            <h1 class="animar-texto">SUPPORT US</h1>
-            <p>Play the game on itch.io if you want and look other projects we have done!.</p>
-            <br>
-            <iframe frameborder="0"
-                src="https://itch.io/embed/2712313?border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=ff265e&amp;border_color=222222"
-                width="550" height="165" style="border-radius: 4px;">
-                <a href="https://caffeeinewhore.itch.io/sleepy-rush">Sleepy Rush by caffeeinewhore</a>
-                </iframe>
+        <div style="text-align: center; font-size: xx-large; font-weight: bold;">
+            <a class="animar-texto-blanco" href="https://itch.io/embed-upload/10584088?color=141414" target="_blank"
+                rel="noopener noreferrer">PLAY NOW</a>
         </div>
     </div>
     <br>
     <div class="content brillo-constante">
         <div style="text-align: center;">
             <h1 class="animar-texto">COLLECT CARDS</h1>
-            <p>Each one has a unique art, story and effect in the game, with different tiers regarding their rarity and a mana cost.</p>
+            <p>Each one has a unique art, story and effect in the game, with different tiers regarding their rarity and
+                a mana cost.</p>
         </div>
         <div class="carta-container">
             <img class="carta sprite" src="{% static 'img/card1.png' %}" alt="Card 1">
@@ -40,9 +35,12 @@
             <p>Until you acomplish your goal of scaping the nightmare.</p>
         </div>
         <div class="carta-container">
-            <img class="carta sprite" src="{% static 'img/EnemySprites/tile004.png' %}" alt="Card 1" style="border: 0px;">
-            <img class="carta sprite" src="{% static 'img/EnemySprites/tile005.png' %}" alt="Card 3" style="border: 0px;">
-            <img class="carta sprite" src="{% static 'img/EnemySprites/tile006.png' %}" alt="Card 4" style="border: 0px;">
+            <img class="carta sprite" src="{% static 'img/EnemySprites/tile004.png' %}" alt="Card 1"
+                style="border: 0px;">
+            <img class="carta sprite" src="{% static 'img/EnemySprites/tile005.png' %}" alt="Card 3"
+                style="border: 0px;">
+            <img class="carta sprite" src="{% static 'img/EnemySprites/tile006.png' %}" alt="Card 4"
+                style="border: 0px;">
         </div>
     </div>
     <br>
@@ -58,16 +56,18 @@
     <br>
     <div class="content brillo-constante">
         <div style="text-align: center;">
-            <h1 class="animar-texto">CONTACT US</h1>
-            <p>If you have any questions, feedback, or just want to say hi, feel free to reach out to us!</p>
-            <p>Email: <a href="mailto:contact@sleepyrush.com" class="animar-texto">contact@sleepyrush.com</a></p>
-            <p>Follow us on social media:</p>
-            <p>
-                <a href="https://twitter.com/sleepyRush" class="animar-texto" target="_blank">Twitter</a> |
-                <a href="https://instagram.com/sleepyRush" class="animar-texto" target="_blank">Instagram</a>
-            </p>
+            <h1 class="animar-texto">SUPPORT US</h1>
+            <p>Play and look our itch.io if you want and try other projects we have done!.</p>
+            <br>
+            <iframe frameborder="0"
+                src="https://itch.io/embed/2712313?border_width=0&amp;bg_color=222222&amp;fg_color=eeeeee&amp;link_color=ff265e&amp;border_color=222222"
+                width="550" height="165" style="border-radius: 4px;">
+                <a href="https://caffeeinewhore.itch.io/sleepy-rush">Sleepy Rush by caffeeinewhore</a>
+            </iframe>
         </div>
     </div>
+    <br>
+    {% include 'footer.html' %}
 </body>
 <script src="{% static 'js/cartas3D.js' %}"></script>
 
