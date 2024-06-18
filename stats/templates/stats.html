@@ -15,7 +15,7 @@
             <br><br>
             <h2><span class="material-icons animar-texto">person</span> Username: <strong>{{ userStats.user.username }}</strong></h2>
             <br><br>
-            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ userStats.playtime }} h</p><br>
+            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ userStats.playtime|floatformat:0 }} h</p><br>
             <p><span class="material-icons animar-texto">check_circle_outline</span> <strong>Levels completed:</strong> {{ userStats.levels_completed }}</p><br>
             <p><span class="material-icons animar-texto">highlight_off</span> <strong>Enemies Killed:</strong> {{ userStats.kills }}</p><br>
             <p><span class="material-icons animar-texto">mood_bad</span> <strong>Deaths:</strong> {{ userStats.deaths }}</p>
@@ -25,7 +25,7 @@
         <div class="container-texto">
             <h1 class="animar-texto">Worldwide Stadistics</h1>
             <br><br>
-            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ worldwideStats.playtime }} h</p> <br>
+            <p><span class="material-icons animar-texto">schedule</span> <strong>Total playtime:</strong> {{ worldwideStats.playtime|floatformat:0 }} h</p> <br>
             <p><span class="material-icons animar-texto">check_circle_outline</span> <strong>Levels completed:</strong> {{ worldwideStats.levelsCompleted }}</p> <br>
             <p><span class="material-icons animar-texto">highlight_off</span> <strong>Enemies Killed:</strong> {{ worldwideStats.kills }}</p> <br>
             <p><span class="material-icons animar-texto">mood_bad</span> <strong>Deaths:</strong> {{ worldwideStats.deaths }}</p>
